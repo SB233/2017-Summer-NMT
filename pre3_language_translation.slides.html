@@ -11885,7 +11885,7 @@ Source: <a href="https://github.com/SB233/deep-learning/tree/master/language-tra
 </ul>
 <p>If you want to follow along, this is a notebook that you can view :</p>
 <ul>
-<li>All materials (notebook, data, link to nbviewer): <a href="https://github.com/SB233/deep-learning/tree/master/language-translation">https://github.com/SB233/deep-learning/tree/master/language-translation</a></li>
+<li>All materials (notebook, data, link to nbviewer): <a href="https://github.com/SB233/2017-Summer-NMT">https://github.com/SB233/2017-Summer-NMT</a></li>
 <li>You need <code>tensorflow</code> &gt; 1.1.0 (easy solution is using Anaconda)</li>
 </ul>
 
@@ -11994,6 +11994,20 @@ looks like a probability distribution
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Non-linearity-and-activation-function">Non-linearity and activation function<a class="anchor-link" href="#Non-linearity-and-activation-function">&#182;</a></h3><p><br></br></p>
+<CENTER>
+two-layer neural network
+<img src="img/two-layer.png" width="100%">
+
+
+</CENTER>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="One-hot-encoding">One-hot encoding<a class="anchor-link" href="#One-hot-encoding">&#182;</a></h3><p><br></br></p>
 <CENTER>
 
@@ -12013,6 +12027,36 @@ this is for classificaiton
 <CENTER>
 Categorical cross-entropy loss
 <img src="img/cross_entropy.png" width="70%">
+
+
+
+</CENTER>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Crazy-idea---Dropout">Crazy idea - Dropout<a class="anchor-link" href="#Crazy-idea---Dropout">&#182;</a></h3><p><br></br></p>
+<CENTER>
+dropout
+<img src="img/dropout.png" width="70%">
+
+
+
+</CENTER>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Crazy-idea---Dropout">Crazy idea - Dropout<a class="anchor-link" href="#Crazy-idea---Dropout">&#182;</a></h3><p><br></br></p>
+<CENTER>
+No dropout at validation
+<img src="img/dropout2.png" width="70%">
 
 
 
@@ -12115,7 +12159,7 @@ Most of the time, when we are talkng about RNN, it's LSTM
 <h3 id="LSTM">LSTM<a class="anchor-link" href="#LSTM">&#182;</a></h3><p><br></br>
 forget gate</p>
 <CENTER>
-forget something negative
+forget something irrelative
 <br></br>
 <img src="img/forget.png" width="70%">
 
@@ -12131,7 +12175,7 @@ forget something negative
 <h3 id="LSTM">LSTM<a class="anchor-link" href="#LSTM">&#182;</a></h3><p><br></br>
 update gate</p>
 <CENTER>
-update with something positive
+update with a choice
 <br></br>
 <img src="img/update.png" width="70%">
 
@@ -12148,11 +12192,11 @@ update with something positive
 output</p>
 <CENTER>
 
-<p><br></br>
-<img src="img/lstmoutput.png" width="70%"></p>
-<p>&lt;/CENTER&gt;
-<br></br></p>
-<p>check this out:<a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a></p>
+<br></br>
+<img src="img/lstmoutput.png" width="70%">
+
+
+</CENTER><p>check this out:<a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a></p>
 <p><strong> Don't worry, tensorflow is our friend </strong></p>
 
 </div>
